@@ -4,6 +4,8 @@ $(document).ready(function () {
     $('.btn').click(function () {
         let val = $('input').val();
 
+        if (val === '') return;
+        
         if ($.isNumeric(val)) {
             let num = parseInt(val);
             for (let i = 0; i < num; i++) {
